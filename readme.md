@@ -2,6 +2,8 @@
 
 Generates lenses for Elm records for use with Elm-Monocle
 
+https://github.com/arturopala/elm-monocle
+
 ## Usage
 
 ```
