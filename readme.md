@@ -6,8 +6,23 @@ https://github.com/arturopala/elm-monocle
 
 ## Usage
 
+__Requirements__
+* GHC
+* Parsec
+
+1) Build the Project for your Platform
 ```
-runghc Main.hs --module-name "Module.Name" "{ recordField : RecordType }" > ./src/Module/Name.elm
+ghc -o "./bin/elm-make-lenses" -outputdir "./build" Main.hs
+```
+
+2) Link the executable into your path
+```
+ln -s <Project Path>/bin/elm-make-lenses /usr/local/bin/elm-make-lenses
+```
+
+3) Make Lenses
+```
+elm-make-lenses --module-name "Module.Name" "{ recordField : RecordType }"
 ```
 
 ## Example Output

@@ -23,7 +23,7 @@ data Record = Record
 -}
 whitespace :: Parser String
 whitespace =
-    many (char ' ')
+    many (oneOf " \n\t")
 
 {-| Combinator that matches the given parser plus any amount of whitespace
 -}
